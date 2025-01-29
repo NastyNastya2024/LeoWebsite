@@ -1,13 +1,25 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Stress</title>
+    <link rel="stylesheet" href="style.css">
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<div>Money</div>
+<div class="container">
+        <h1>Квиз: «Денежная емкость: насколько вы готовы к финансовому успеху?»</h1>
+
+        <div id="quiz">
+            <!-- Questions will be dynamically loaded here -->
+        </div>
+
+        <div id="result" class="result" style="display: none;"></div>
+    </div>
+
+<button class="button" onclick="location.href='./index.html'">Попробовать другие тесты</button>
+
+
+<script type="module" src="money_script.js"></script>
 </body>
 </html>
