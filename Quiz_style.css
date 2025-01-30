@@ -11,6 +11,14 @@ body {
     overflow: hidden;
 }
 
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
 .container {
     position: absolute;
     top: 0;
@@ -66,10 +74,9 @@ body {
 .item .content {
     position: absolute;
     top: 50%;
-    left: 100px;
+    left: 16%;
     width: 400px;
     text-align: left;
-    font-size: clamp(1rem, 0.6vw, 0.6rem);
     color: #432D61;
     transform: translate(0, -50%);
     font-family: system-ui;
@@ -86,6 +93,7 @@ body {
 
 .content .description {
     margin-top: 10px;
+    font-size: clamp(0.8rem, 0.8vw, 0.8rem);
     margin-bottom: 20px;
     opacity: 0;
     animation: animate 1s ease-in-out .3s 1 forwards;
