@@ -15,7 +15,6 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    flex-wrap: wrap; /* Элементы переносятся на новую строку */
     width: 100vw;  /* Ширина на весь экран */
     height: 100vh; /* Высота на весь экран */
     background: #f5f5f5;
@@ -139,8 +138,72 @@ body {
         color: #fff;
     }
 
+/* Адаптация для планшетов */
+@media (max-width: 1024px) {
+    .slide .item {
+        width: 90%;
+        height: auto;
+    }
+
+    .slide .item:nth-child(3) {
+        left: 50%;
+    }
+
+    .slide .item:nth-child(4) {
+        left: calc(50% + 80px);
+    }
+
+    .slide .item:nth-child(5) {
+        left: calc(50% + 160px);
+    }
+}
+
+/* Адаптация для телефонов */
 @media (max-width: 768px) {
-  .item {
-    width: 100%; /* На мобильных устройствах блоки занимают всю ширину */
-  }
+    .slide {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .slide .item {
+        width: 100%;
+        height: auto;
+        position: static;
+        margin-bottom: 20px;
+    }
+
+    .slide .item:nth-child(n) {
+        left: 0;
+    }
+
+    .slide .item .content {
+        text-align: center;
+        max-width: 90%;
+        margin: auto;
+    }
+
+    .button-container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
+
+/* Адаптация для маленьких телефонов */
+@media (max-width: 480px) {
+    .slide .item {
+        width: 100%;
+    }
+
+    .slide .item .content {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .button-container button {
+        font-size: 18px;
+        padding: 8px;
+    }
 }
