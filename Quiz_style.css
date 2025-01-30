@@ -29,10 +29,10 @@ body {
 }
 
     .container .slide .item {
-        width: 100px;
-        height: 100px;
+        width: 60px;
+        height: 60px;
         position: absolute;
-        top: 70%;
+        top: 50%;
         transform: translate(0, -50%);
         border-radius: 100px;
         background-position: 50% 50%;
@@ -55,19 +55,19 @@ body {
     .slide .item:nth-child(2) .content { display: block; }
 
 .slide .item:nth-child(3) {
-    left: 60%;
+    left: 75%;
 }
 
 .slide .item:nth-child(4) {
-    left: calc(60% + 110px);
+    left: calc(75% + 80px);
 }
 
 .slide .item:nth-child(5) {
-    left: calc(60% + 220px);
+    left: calc(75% + 160px);
 }
 
 .slide .item:nth-child(n + 6) {
-    left: calc(60% + 220px);
+    left: calc(75% + 160px);
     overflow: hidden;
 }
 
