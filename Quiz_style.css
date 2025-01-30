@@ -15,6 +15,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+    flex-wrap: wrap; /* Элементы переносятся на новую строку */
     width: 100vw;  /* Ширина на весь экран */
     height: 100vh; /* Высота на весь экран */
     background: #f5f5f5;
@@ -27,6 +28,7 @@ body {
         top: 50%;
         transform: translate(0, -50%);
         border-radius: 100px;
+        flex-wrap: wrap; /* Элементы переносятся на новую строку */
         background-position: 50% 50%;
         background-size: cover;
         background-repeat: no-repeat;
