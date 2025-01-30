@@ -27,7 +27,6 @@ body {
         top: 50%;
         transform: translate(0, -50%);
         border-radius: 100px;
-        flex-wrap: wrap; /* Элементы переносятся на новую строку */
         background-position: 50% 50%;
         background-size: cover;
         background-repeat: no-repeat;
@@ -137,5 +136,3 @@ body {
         background: #ababab;
         color: #fff;
     }
-
-}
