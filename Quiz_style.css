@@ -84,7 +84,7 @@ body {
 }
 
 .content .name {
-    font-size: 40px;
+    font-size: clamp(1.5rem, 3vw, 3rem);
     text-transform: uppercase;
     font-weight: bold;
     opacity: 0;
@@ -94,6 +94,7 @@ body {
 .content .description {
     margin-top: 10px;
     margin-bottom: 20px;
+    font-size: clamp(1.5rem, 3vw, 3rem);
     opacity: 0;
     animation: animate 1s ease-in-out .3s 1 forwards;
 }
