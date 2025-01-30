@@ -167,10 +167,10 @@ body {
     }
 
     .slide .item {
-        width: 100%;
+        width: 10%;
         height: auto;
         position: static;
-        margin-bottom: 20px;
+        margin-bottom: 2px;
     }
 
     .slide .item:nth-child(n) {
@@ -179,7 +179,7 @@ body {
 
     .slide .item .content {
         text-align: center;
-        max-width: 90%;
+        max-width: 0%;
         margin: auto;
     }
 
@@ -192,18 +192,18 @@ body {
 }
 
 /* Адаптация для маленьких телефонов */
-@media (max-width: 80px) {
+@media (max-width: 0px) {
     .slide .item {
         width: 10%;
     }
 
     .slide .item .content {
-        padding: 10px;
-        font-size: 14px;
+        padding: 0px;
+        font-size: 0px;
     }
 
     .button-container button {
-        font-size: 18px;
-        padding: 8px;
+        font-size: 0px;
+        padding: 0px;
     }
 }
