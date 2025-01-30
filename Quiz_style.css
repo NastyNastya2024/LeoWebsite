@@ -136,3 +136,61 @@ body {
         background: #ababab;
         color: #fff;
     }
+
+/* Адаптивность */
+@media (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+
+    .content {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .item {
+        height: 300px;
+    }
+
+    .name {
+        font-size: 20px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .button button {
+        font-size: 20px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .item {
+        height: 250px;
+    }
+
+    .content {
+        padding: 15px;
+    }
+
+    .name {
+        font-size: 18px;
+    }
+
+    .description {
+        font-size: 12px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}
