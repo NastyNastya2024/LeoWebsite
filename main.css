@@ -1,0 +1,286 @@
+/* Подключение шрифта */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #C5DBF6;
+    margin: 0;
+    padding: 0;
+    position: relative; /* Для правильного позиционирования слоев */
+}
+
+/* Видео на заднем плане */
+/* Основной контейнер */
+.content-container {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    margin-bottom: 200px;
+}
+
+/* Секция героя */
+.hero {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/* Видеофон */
+.video-background {
+    width: 140%;
+    height: 140%;
+    object-fit: contain;
+    position: absolute;
+    top: 50%;            /* Центрируем по вертикали */
+    left: 60%;           /* Центрируем по горизонтали */
+    transform: translate(-50%, -50%);
+    z-index: -1; /* Видео на заднем плане */
+}
+
+/* Текстовый контент */
+.text-content {
+    position: absolute;
+    top: 30%;  /* Выравнивание по вертикали */
+    left: 30%; /* Выравнивание по горизонтали */
+    transform: translate(-50%, -50%); /* Центрируем */
+    color: white;
+    text-align: left;
+    z-index: 1; /* Текст поверх видео */
+    max-width: 80%; /* Ограничиваем ширину текста */
+    margin-bottom: 200px;
+}
+
+/* Заголовок */
+h1 {
+    font-size: 3rem;
+    line-height: 1.4;
+    margin: 0;
+    font-weight: bold;
+    color: white;
+}
+
+/* Выделенный текст */
+.highlight {
+    color: #ff6f61; /* Цвет выделенного текста */
+}
+
+/* Описание */
+.description {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Кнопка */
+.start-button {
+    background-color: #ff6f61; /* Цвет кнопки */
+    color: white;
+    font-size: 1.1rem;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+/* Эффект на кнопке при наведении */
+.start-button:hover {
+    background-color: #d75c51; /* Темный оттенок при наведении */
+}
+
+/* Контейнер */
+
+.container {
+    display: flex;
+    flex-direction: column; /* Меняем направление flex-контейнера */
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 40px;
+    flex-wrap: wrap;
+    text-align: center; /* Центрируем текст */
+    position: relative;
+    z-index: 1; /* Содержимое выше видео */
+    margin-top: 200px;
+}
+
+/* Мокап телефона */
+.image-container {
+    margin-top: 20px; /* Добавляем отступ сверху для картинки */
+    margin-bottom: 200px;
+}
+
+.text-content {
+    max-width: 800px;
+    padding-left: 40px; /* Отступ слева */
+}
+
+/* Кнопки и текст */
+.text-container {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1e293b;
+    margin-bottom: 20px;
+    text-align: center;
+    padding-left: 40px; /* Отступ слева */
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+    padding-left: 40px; /* Отступ слева */
+}
+
+.bot-button {
+    background: linear-gradient(to right, #b3a4ff, #ff8acb);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    padding-left: 40px; /* Отступ слева */
+}
+
+/* Навигация */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    padding-left: 40px; /* Отступ слева */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 15px;
+    font-weight: 600;
+    padding-left: 40px; /* Отступ слева */
+}
+
+/* Контент */
+.content-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 40px;
+    flex-wrap: wrap;
+    padding-left: 40px; /* Отступ слева */
+}
+
+.text-content h1 {
+    font-size: 4vw;
+    font-weight: 700;
+    color: #1e293b;
+    padding-left: 40px; /* Отступ слева */
+    margin-bottom: 20px;
+    left: 40%; /* Горизонтальное выравнивание */
+}
+
+.highlight {
+    color: #8a4fff;
+    padding-left: 40px; /* Отступ слева */
+}
+
+.description {
+    font-size: 1.5vw;
+    color: #475569;
+    margin-bottom: 20px;
+    padding-left: 40px; /* Отступ слева */
+}
+
+.start-button {
+    background: linear-gradient(to right, #ff89cb, #ffcb6b);
+    border: none;
+    padding: 12px 24px;
+    border-radius: 30px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    position: absolute;
+    top: 100%;  /* Вертикальное выравнивание */
+    left: 24%; /* Горизонтальное выравнивание */
+    transform: translate(-50%, -50%); /* Центрируем */
+    margin-top: 20px; /* Отступ сверху */
+    padding-left: 40px; /* Отступ слева */
+}
+
+/* Контейнер с карточками */
+.cards-container {
+    position: absolute;
+    bottom: -10px; /* Располагаем карточки внизу */
+    width: 96%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0 20px;
+    box-sizing: border-box; /* Учитываем отступы в общей ширине */
+    z-index: 1; /* Карточки поверх видео */
+}
+
+/* Карточки */
+.card {
+    background: white;
+    padding: 20px; /* Уменьшаем отступы */
+    border-radius: 12px; /* Уменьшаем радиус скругления */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1 1 250px; /* Уменьшаем ширину карточек */
+    max-width: 250px; /* Уменьшаем максимальную ширину */
+    margin: 0;
+    box-sizing: border-box; /* Учитываем отступы и бордеры в общей ширине */
+}
+
+.card h3 {
+    font-size: 0.7 rem;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #475569;
+}
+
+/* Футер */
+footer {
+    background-color: #1e293b;
+    color: white;
+    padding: 40px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    padding-left: 40px; /* Отступ слева */
+    flex-wrap: wrap;
+}
+
+.footer-section h4 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #b3a4ff;
+}
+
+.footer-section p, .footer-section a {
+    font-size: 1rem;
+    color: #dce7f8;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px;
+    background-color: #111827;
+}
