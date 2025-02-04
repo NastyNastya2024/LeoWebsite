@@ -4,8 +4,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     background-color: #C5DBF6;
     margin: 0;
-    padding: 0;
-    position: relative; /* Для правильного позиционирования слоев */
+    padding: 0;    position: relative; /* Для правильного позиционирования слоев */
 }
 
 /* Видео на заднем плане */
@@ -17,13 +16,6 @@ body {
     padding: 0;
     position: relative;
     margin-bottom: 200px;
-}
-
-/* Секция героя */
-.hero {
-    width: 100%;
-    height: 100%;
-    position: relative;
 }
 
 /* Видеофон */
@@ -42,7 +34,7 @@ body {
 .text-content {
     position: absolute;
     top: 30%;  /* Выравнивание по вертикали */
-    left: 30%; /* Выравнивание по горизонтали */
+    left: 35%; /* Выравнивание по горизонтали */
     transform: translate(-50%, -50%); /* Центрируем */
     color: white;
     text-align: left;
@@ -60,18 +52,6 @@ h1 {
     color: white;
 }
 
-/* Выделенный текст */
-.highlight {
-    color: #ff6f61; /* Цвет выделенного текста */
-}
-
-/* Описание */
-.description {
-    font-size: 1.2rem;
-    margin: 20px 0;
-    font-weight: 300;
-    color: rgba(255, 255, 255, 0.8);
-}
 
 /* Кнопка */
 .start-button {
@@ -91,60 +71,6 @@ h1 {
     background-color: #d75c51; /* Темный оттенок при наведении */
 }
 
-/* Контейнер */
-
-.container {
-    display: flex;
-    flex-direction: column; /* Меняем направление flex-контейнера */
-    align-items: center;
-    justify-content: center;
-    max-width: 1200px;
-    margin: 60px auto;
-    padding: 40px;
-    flex-wrap: wrap;
-    text-align: center; /* Центрируем текст */
-    position: relative;
-    z-index: 1; /* Содержимое выше видео */
-    margin-top: 200px;
-}
-
-/* Мокап телефона */
-.image-container {
-    margin-top: 20px; /* Добавляем отступ сверху для картинки */
-    margin-bottom: 200px;
-}
-
-.text-content {
-    max-width: 800px;
-    padding-left: 40px; /* Отступ слева */
-}
-
-/* Кнопки и текст */
-.text-container {
-    font-size: 24px;
-    font-weight: bold;
-    color: #1e293b;
-    margin-bottom: 20px;
-    text-align: center;
-    padding-left: 40px; /* Отступ слева */
-}
-
-.button-container {
-    text-align: center;
-    margin-top: 20px;
-    padding-left: 40px; /* Отступ слева */
-}
-
-.bot-button {
-    background: linear-gradient(to right, #b3a4ff, #ff8acb);
-    border: none;
-    padding: 10px 20px;
-    border-radius: 20px;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    padding-left: 40px; /* Отступ слева */
-}
 
 /* Навигация */
 .navbar {
@@ -185,8 +111,8 @@ h1 {
 }
 
 .highlight {
-    color: #8a4fff;
-    padding-left: 40px; /* Отступ слева */
+    color: #FFFFFF;
+    padding-left: 0px; /* Отступ слева */
 }
 
 .description {
@@ -212,6 +138,7 @@ h1 {
     margin-top: 20px; /* Отступ сверху */
     padding-left: 40px; /* Отступ слева */
 }
+
 
 /* Контейнер с карточками */
 .cards-container {
@@ -250,37 +177,108 @@ h1 {
     color: #475569;
 }
 
-/* Футер */
-footer {
-    background-color: #1e293b;
-    color: white;
-    padding: 40px 0;
-}
 
-.footer-container {
-    display: flex;
-    justify-content: space-between;
+/* Контейнер */
+.container1 {
+    display: flex; /* Размещаем элементы в строку */
+    align-items: center; /* Выравниваем элементы */
+    justify-content: center;
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 40px;
-    padding-left: 40px; /* Отступ слева */
-    flex-wrap: wrap;
+    margin: 200px auto;
+    padding: 40px;
+    flex-wrap: wrap; /* Адаптация к экранам */
+    text-align: left; /* Выравниваем текст влево */
+    position: relative;
+    z-index: 2;
+    gap: 0px; /* Отступ между текстом и картинкой */
 }
 
-.footer-section h4 {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-    color: #b3a4ff;
-}
-
-.footer-section p, .footer-section a {
-    font-size: 1rem;
-    color: #dce7f8;
-    text-decoration: none;
-}
-
-.footer-bottom {
-    text-align: center;
+/* Мокап телефона */
+/* Контейнер с текстом */
+.text2 {
+    flex: 1; /* Текст занимает оставшееся пространство */
+    max-width: 100%; /* Ограничиваем ширину текста */
+    position: relative;
+    align-items: center; /* Выравниваем элементы */
+    z-index: 1; /* Поднимаем текст над картинкой */
+    color: white;
     padding: 20px;
-    background-color: #111827;
 }
+
+/* Контейнер с картинкой */
+.image-container {
+    flex: 5; /* Картинка занимает вторую половину экрана */
+    position: relative;
+    align-items: center; /* Выравниваем элементы */
+    max-width: 70%;
+    display: flex;
+    z-index: -1; /* Размещаем картинку под текстом */
+    justify-content: left; /* Центрируем изображение */
+}
+
+/* Само изображение */
+.phone-mockup {
+    width:100%;
+    max-width: 700px; /* Ограничиваем размер изображения */
+    height: auto;
+    position: relative;
+    z-index: -1; /* Размещаем картинку под текстом */
+    opacity: 0.9; /* Немного прозрачности для лучшего контраста */
+}
+
+/* Контейнер для стрелок */
+.arrow-container {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+/* Кнопки */
+.arrow-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+
+
+
+.text2 h1 {
+    font-size: 4vw;
+    font-weight: 700;
+    color: #1e293b;
+    padding-left: 40px; /* Отступ слева */
+    margin-bottom: 20px;
+    left: 40%; /* Горизонтальное выравнивание */
+}
+
+.highlight {
+    color: #8a4fff;
+    padding-left: 40px; /* Отступ слева */
+}
+
+.description {
+    font-size: 1.5vw;
+    color: #475569;
+    margin-bottom: 20px;
+    padding-left: 40px; /* Отступ слева */
+}
+
+.start-button2 {
+    background: linear-gradient(to right, #ff89cb, #ffcb6b);
+    border: none;
+    padding: 12px 24px;
+    border-radius: 30px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    position: absolute;
+    top: 100%;  /* Вертикальное выравнивание */
+    left: 40%; /* Горизонтальное выравнивание */
+    transform: translate(-50%, -50%); /* Центрируем */
+    margin-top: 10px; /* Отступ сверху */
+}
+
+
