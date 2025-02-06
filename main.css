@@ -76,7 +76,7 @@ h1 {
     justify-content: space-between;
     align-items: right;
     padding: 20px 40px;
-    padding-left: 40px; /* Отступ слева */
+    padding-left: 20px; /* Отступ слева */
 }
 
 .nav-links a {
@@ -84,7 +84,7 @@ h1 {
     color: #333;
     margin: 0 15px;
     font-weight: 600;
-    padding-left: 40px; /* Отступ слева */
+    padding-left: 20px; /* Отступ слева */
 }
 
 /* Контент */
@@ -96,14 +96,14 @@ h1 {
     margin: 60px auto;
     padding: 0 40px;
     flex-wrap: wrap;
-    padding-left: 40px; /* Отступ слева */
+    padding-left: 20px; /* Отступ слева */
 }
 
 .text-content h1 {
     font-size: 4vw;
     font-weight: 700;
     color: #1e293b;
-    padding-left: 40px; /* Отступ слева */
+    padding-left: 20px; /* Отступ слева */
     margin-bottom: 20px;
     left: 40%; /* Горизонтальное выравнивание */
 }
@@ -117,7 +117,7 @@ h1 {
     font-size: 1.5vw;
     color: #475569;
     margin-bottom: 20px;
-    padding-left: 40px; /* Отступ слева */
+    padding-left: 20px; /* Отступ слева */
 }
 
 .start-button {
@@ -233,14 +233,14 @@ h1 {
 
 .highlight {
     color: #8a4fff;
-    padding-left: 40px; /* Отступ слева */
+    padding-left: 20px; /* Отступ слева */
 }
 
 .description {
     font-size: 1.5vw;
     color: #475569;
     margin-bottom: 20px;
-    padding-left: 40px; /* Отступ слева */
+    padding-left: 20px; /* Отступ слева */
 }
 
 .start-button2 {
@@ -327,21 +327,21 @@ h1 {
     font-size: 4vw;
     font-weight: 700;
     color: #1e293b;
-    padding-left: 40px; /* Отступ слева */
+    padding-left: 20px; /* Отступ слева */
     margin-bottom: 20px;
     left: 40%; /* Горизонтальное выравнивание */
 }
 
 .highlight {
     color: #8a4fff;
-    padding-left: 40px; /* Отступ слева */
+    padding-left: 20px; /* Отступ слева */
 }
 
 .description1 {
     font-size: 1.5vw;
     color: #475569;
     margin-bottom: 20px;
-    padding-left: 40px; /* Отступ слева */
+    padding-left: 20px; /* Отступ слева */
 }
 
 .start-button3 {
@@ -368,7 +368,7 @@ h1 {
     padding: 0;
     position: relative;
     margin-bottom: 20px;
-    padding-left: 40px; /* Отступ слева */
+    padding-left: 20px; /* Отступ слева */
 }
 
 .cards-container4 {
@@ -381,7 +381,7 @@ h1 {
     padding: 0 20px;
     box-sizing: border-box; /* Учитываем отступы в общей ширине */
     z-index: 1; /* Карточки поверх видео */
-    padding-left: 40px; /* Отступ слева */
+    padding-left: 20px; /* Отступ слева */
 }
 
 /* Текстовый контент */
@@ -390,7 +390,7 @@ h1 {
     text-align: left;
     z-index: 1; /* Текст поверх видео */
     max-width: 80%; /* Ограничиваем ширину текста */
-    padding-left: 40px; /* Отступ слева */
+    padding-left: 20px; /* Отступ слева */
 }
 
 
