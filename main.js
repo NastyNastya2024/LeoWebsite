@@ -1,29 +1,19 @@
 document.addEventListener("DOMContentLoaded", function () {
-        let currentImageIndex = 0;
-        const images = [
-            'mockup/123.png',  // Первый путь к изображению
-            'mockup/124.png',  // Второй путь к изображению
-            'mockup/125.png'   // Третий путь к изображению
-        ];
+            const phrases = [
+                "internal barriers to personal growth",
+                "family conflicts",
+                "PTSD consequences",
+                "difficulties in communication with others"
+            ];
 
-        const phoneImage = document.getElementById('phoneImage');
+            let index = 0;
+            const highlightSpan = document.querySelector(".highlight");
 
-        // Функция для переключения на следующее изображение
-        function nextImage() {
-            currentImageIndex = (currentImageIndex + 1) % images.length;  // Циклично
-            phoneImage.src = images[currentImageIndex];  // Обновляем источник изображения
-        }
+            function changeText() {
+                highlightSpan.textContent = phrases[index];
+                index = (index + 1) % phrases.length;
+            }
 
-        // Функция для переключения на предыдущее изображение
-        function prevImage() {
-            currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;  // Циклично
-            phoneImage.src = images[currentImageIndex];  // Обновляем источник изображения
-        }
+            setInterval(changeText, 4000); // Меняет текст каждые 3 секунды
+        });
 
-        // Привязываем функции к кнопкам
-        const nextButton = document.getElementById('nextButton');  // Кнопка "следующее"
-        const prevButton = document.getElementById('prevButton');  // Кнопка "предыдущее"
-
-        nextButton.addEventListener('click', nextImage);  // При клике на кнопку "следующее" переключаем изображение
-        prevButton.addEventListener('click', prevImage);  // При клике на кнопку "предыдущее" переключаем изображение
-    });

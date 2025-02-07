@@ -15,7 +15,7 @@ body {
     margin: 0;
     padding: 0;
     position: relative;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 /* Видеофон */
@@ -23,10 +23,11 @@ body {
     width: 140%;
     height: 140%;
     object-fit: contain;
-    position: absolute;
+    position: relative;
     top: 50%;            /* Центрируем по вертикали */
     left: 60%;           /* Центрируем по горизонтали */
     transform: translate(-50%, -50%);
+    flex-wrap: wrap; /* Адаптация к экранам */
     z-index: -1; /* Видео на заднем плане */
 }
 
@@ -40,35 +41,18 @@ body {
     text-align: left;
     z-index: 1; /* Текст поверх видео */
     max-width: 80%; /* Ограничиваем ширину текста */
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 /* Заголовок */
 h1 {
-    font-size: 3rem;
-    line-height: 1.4;
+    font-size: 1 rem;
+    line-height: 1.1;
     margin: 0;
     font-weight: bold;
     color: white;
 }
 
-/* Кнопка */
-.start-button {
-    background-color: #ff6f61; /* Цвет кнопки */
-    color: white;
-    font-size: 1.1rem;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-top: 20px;
-}
-
-/* Эффект на кнопке при наведении */
-.start-button:hover {
-    background-color: #d75c51; /* Темный оттенок при наведении */
-}
 
 /* Навигация */
 .navbar {
@@ -76,7 +60,6 @@ h1 {
     justify-content: space-between;
     align-items: right;
     padding: 20px 40px;
-    padding-left: 20px; /* Отступ слева */
 }
 
 .nav-links a {
@@ -103,9 +86,7 @@ h1 {
     font-size: 4vw;
     font-weight: 700;
     color: #1e293b;
-    padding-left: 20px; /* Отступ слева */
     margin-bottom: 20px;
-    left: 40%; /* Горизонтальное выравнивание */
 }
 
 .highlight {
@@ -117,7 +98,6 @@ h1 {
     font-size: 1.5vw;
     color: #475569;
     margin-bottom: 20px;
-    padding-left: 20px; /* Отступ слева */
 }
 
 .start-button {
@@ -129,22 +109,23 @@ h1 {
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
-    position: absolute;
-    top: 100%;  /* Вертикальное выравнивание */
-    left: 24%; /* Горизонтальное выравнивание */
-    transform: translate(-50%, -50%); /* Центрируем */
     margin-top: 20px; /* Отступ сверху */
-    padding-left: 40px; /* Отступ слева */
+}
+
+/* Эффект на кнопке при наведении */
+.start-button:hover {
+    background-color: #d75c51; /* Темный оттенок при наведении */
 }
 
 
 /* Контейнер с карточками */
 .cards-container {
     position: absolute;
-    bottom: -20px; /* Располагаем карточки внизу */
-    width: 200%;
+    flex-wrap: wrap; /* Адаптация к экранам */
+    display: flex; /* Размещаем элементы в строку */
+    bottom: 0px; /* Располагаем карточки внизу */
+    width: 100%;
     display: flex;
-    padding: 0 20px;
     z-index: 1; /* Карточки поверх видео */
 }
 
@@ -198,7 +179,7 @@ h1 {
 }
 
 .phone-mockup {
-    width:140%;
+    width:100%;
     max-width: 700px; /* Ограничиваем размер изображения */
     height: auto;
     position: relative;
@@ -215,49 +196,28 @@ h1 {
 
 /* Кнопки */
 .arrow-button {
-    background: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background: #dce7f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 8px 8px 16px #b8c2d6, -8px -8px 16px #ffffff;
     border: none;
-    font-size: 24px;
+    outline: none;
     cursor: pointer;
-    color: white;
+    transition: all 0.2s ease-in-out;
 }
 
 .text2 h1 {
     font-size: 4vw;
     font-weight: 700;
     color: #1e293b;
-    padding-left: 40px; /* Отступ слева */
     margin-bottom: 20px;
-    left: 40%; /* Горизонтальное выравнивание */
 }
 
-.highlight {
-    color: #8a4fff;
-    padding-left: 20px; /* Отступ слева */
-}
 
-.description {
-    font-size: 1.5vw;
-    color: #475569;
-    margin-bottom: 20px;
-    padding-left: 20px; /* Отступ слева */
-}
-
-.start-button2 {
-    background: linear-gradient(to right, #ff89cb, #ffcb6b);
-    border: none;
-    padding: 12px 24px;
-    border-radius: 30px;
-    color: white;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    position: absolute;
-    top: 100%;  /* Вертикальное выравнивание */
-    left: 40%; /* Горизонтальное выравнивание */
-    transform: translate(-50%, -50%); /* Центрируем */
-    margin-top: 10px; /* Отступ сверху */
-}
 
 /* Контейнер */
 .container2 {
@@ -327,38 +287,16 @@ h1 {
     font-size: 4vw;
     font-weight: 700;
     color: #1e293b;
-    padding-left: 20px; /* Отступ слева */
     margin-bottom: 20px;
     left: 40%; /* Горизонтальное выравнивание */
 }
 
-.highlight {
-    color: #8a4fff;
-    padding-left: 20px; /* Отступ слева */
-}
+
 
 .description1 {
     font-size: 1.5vw;
     color: #475569;
     margin-bottom: 20px;
-    padding-left: 20px; /* Отступ слева */
-}
-
-.start-button3 {
-    background: linear-gradient(to right, #ff89cb, #ffcb6b);
-    border: none;
-    padding: 12px 24px;
-    border-radius: 30px;
-    color: white;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    position: absolute;
-    top: 100%;  /* Вертикальное выравнивание */
-    left: 40%; /* Горизонтальное выравнивание */
-    transform: translate(-50%, -50%); /* Центрируем */
-    margin-top: 10px; /* Отступ сверху */
-    padding-left: 40px; /* Отступ слева */
 }
 
 .content-container4 {
@@ -368,7 +306,6 @@ h1 {
     padding: 0;
     position: relative;
     margin-bottom: 20px;
-    padding-left: 20px; /* Отступ слева */
 }
 
 .cards-container4 {
@@ -381,7 +318,6 @@ h1 {
     padding: 0 20px;
     box-sizing: border-box; /* Учитываем отступы в общей ширине */
     z-index: 1; /* Карточки поверх видео */
-    padding-left: 20px; /* Отступ слева */
 }
 
 /* Текстовый контент */
@@ -390,7 +326,6 @@ h1 {
     text-align: left;
     z-index: 1; /* Текст поверх видео */
     max-width: 80%; /* Ограничиваем ширину текста */
-    padding-left: 20px; /* Отступ слева */
 }
 
 
