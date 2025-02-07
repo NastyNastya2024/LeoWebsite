@@ -1,65 +1,65 @@
 const questions = [
     {
-        question: "Как вы относитесь к управлению личными финансами?",
+        question: "How do you feel about managing personal finances?",
         answers: [
-            { text: "a) Я не занимаюсь планированием и часто не знаю, куда уходит деньги.", value: 1 },
-            { text: "b) Я иногда составляю бюджет, но не всегда его придерживаюсь.", value: 2 },
-            { text: "c) Я веду бюджет, но часто отклоняюсь от него.", value: 3 },
-            { text: "d) Я всегда контролирую свои расходы и регулярно планирую финансы.", value: 4 }
+            { text: "a) I don't do any planning and often don't know where my money is going.", value: 1 },
+            { text: "b) I sometimes create a budget, but I don't always stick to it.", value: 2 },
+            { text: "c) I keep a budget, but often deviate from it.", value: 3 },
+            { text: "d) I always control my expenses and regularly plan my finances.", value: 4 }
         ]
     },
     {
-        question: "Как вы воспринимаете возможность инвестировать деньги?",
+        question: "How do you perceive the opportunity to invest money?",
         answers: [
-            { text: "a) Я боюсь инвестировать и избегаю любых рисков.", value: 1 },
-            { text: "b) Я не уверен(а), стоит ли инвестировать, но иногда думаю об этом.", value: 2 },
-            { text: "c) Я немного инвестирую, но пока не чувствую себя уверенно в этом.", value: 3 },
-            { text: "d) Я активно инвестирую и считаю это важной частью своей финансовой стратегии.", value: 4 }
+            { text: "a) I'm afraid to invest and avoid any risks.", value: 1 },
+            { text: "b) I'm not sure if I should invest, but I sometimes think about it.", value: 2 },
+            { text: "c) I invest a little, but I don't feel confident about it yet.", value: 3 },
+            { text: "d) I actively invest and consider it an important part of my financial strategy.", value: 4 }
         ]
     },
     {
-        question: "Как часто вы откладываете деньги на будущее?",
+        question: "How often do you save money for the future?",
         answers: [
-            { text: "a) Я не откладываю деньги вообще.", value: 1 },
-            { text: "b) Иногда откладываю, но это не всегда стабильно.", value: 2 },
-            { text: "c) Я откладываю деньги регулярно, но не всегда достаточные суммы.", value: 3 },
-            { text: "d) Я всегда откладываю на будущее и регулярно накапливаю сбережения.", value: 4 }
+            { text: "a) I don't save money at all.", value: 1 },
+            { text: "b) I save sometimes, but it's not always consistent.", value: 2 },
+            { text: "c) I save regularly, but not always sufficient amounts.", value: 3 },
+            { text: "d) I always save for the future and regularly accumulate savings.", value: 4 }
         ]
     },
     {
-        question: "Как вы реагируете, если сталкиваетесь с финансовыми трудностями?",
+        question: "How do you react when you face financial difficulties?",
         answers: [
-            { text: "a) Я паникую и не знаю, что делать.", value: 1 },
-            { text: "b) Я пытаюсь решить проблему, но часто чувствую беспокойство.", value: 2 },
-            { text: "c) Я ищу способы решения и пытаюсь справиться с трудностями.", value: 3 },
-            { text: "d) Я уверенно принимаю меры и не позволяю финансовым трудностям выбить меня из колеи.", value: 4 }
+            { text: "a) I panic and don't know what to do.", value: 1 },
+            { text: "b) I try to solve the problem, but I often feel anxious.", value: 2 },
+            { text: "c) I look for ways to solve it and try to cope with the difficulties.", value: 3 },
+            { text: "d) I confidently take action and don't let financial difficulties throw me off track.", value: 4 }
         ]
     },
     {
-        question: "Как вы относитесь к идее получения дополнительного дохода?",
+        question: "How do you feel about the idea of earning additional income?",
         answers: [
-            { text: "a) Я не думаю о дополнительных источниках дохода.", value: 1 },
-            { text: "b) Иногда думаю о дополнительных возможностях, но не предпринимаю шагов.", value: 2 },
-            { text: "c) Я подумываю о дополнительных источниках дохода и рассматриваю варианты.", value: 3 },
-            { text: "d) Я активно ищу возможности для увеличения дохода.", value: 4 }
+            { text: "a) I don't think about additional sources of income.", value: 1 },
+            { text: "b) Sometimes I think about extra opportunities, but I don't take action.", value: 2 },
+            { text: "c) I consider additional income sources and look at options.", value: 3 },
+            { text: "d) I actively seek opportunities to increase my income.", value: 4 }
         ]
     },
     {
-        question: "Как часто вы обучаетесь финансовым стратегиям и планированию?",
+        question: "How often do you learn about financial strategies and planning?",
         answers: [
-            { text: "a) Я не интересуюсь вопросами финансов и не обучаюсь этому.", value: 1 },
-            { text: "b) Иногда читаю о финансах, но не всегда применяю на практике.", value: 2 },
-            { text: "c) Я стараюсь обучаться финансовым стратегиям и внедрять их в свою жизнь.", value: 3 },
-            { text: "d) Я регулярно изучаю финансовые стратегии и активно применяю их.", value: 4 }
+            { text: "a) I'm not interested in finances and don't learn about it.", value: 1 },
+            { text: "b) I sometimes read about finances, but I don't always apply it in practice.", value: 2 },
+            { text: "c) I try to learn financial strategies and implement them in my life.", value: 3 },
+            { text: "d) I regularly study financial strategies and actively apply them.", value: 4 }
         ]
     },
     {
-        question: "Как вы оцениваете свою финансовую независимость?",
+        question: "How would you rate your financial independence?",
         answers: [
-            { text: "a) Я полностью зависим(а) от заработка и не имею сбережений.", value: 1 },
-            { text: "b) Я завишу от зарплаты, но имею небольшие сбережения.", value: 2 },
-            { text: "c) Я независим(а) в некоторой степени и имею стабильные источники дохода.", value: 3 },
-            { text: "d) Я финансово независим(а) и имею несколько источников дохода.", value: 4 }
+            { text: "a) I'm completely dependent on my income and have no savings.", value: 1 },
+            { text: "b) I depend on my salary, but I have some savings.", value: 2 },
+            { text: "c) I'm somewhat independent and have stable income sources.", value: 3 },
+            { text: "d) I'm financially independent and have multiple income sources.", value: 4 }
         ]
     }
 ];
@@ -83,7 +83,7 @@ function loadQuestion() {
                         </label>
                     `).join('')}
                 </div>
-                <button id="nextButton">Далее</button>
+                <button id="nextButton">Next</button>
             </div>
         `;
 
@@ -96,7 +96,7 @@ function loadQuestion() {
 function nextQuestion() {
     const selectedAnswer = document.querySelector('input[name="answer"]:checked');
     if (!selectedAnswer) {
-        alert('Пожалуйста, выберите ответ перед продолжением.');
+        alert('Please select an answer before continuing.');
         return;
     }
     score += parseInt(selectedAnswer.value);
@@ -107,17 +107,17 @@ function nextQuestion() {
 function showResult() {
     let message = '';
     if (score >= 7 && score <= 10) {
-        message = 'Вам стоит уделить больше внимания управлению финансами. Начните с простых шагов по планированию и сбережению, чтобы укрепить свою финансовую стабильность.';
+        message = 'You should pay more attention to managing your finances. Start with simple steps for planning and saving to strengthen your financial stability.';
     } else if (score >= 11 && score <= 14) {
-        message = 'Вы на верном пути, но вам нужно развивать уверенность в управлении финансами и инвестировании. Работайте над долгосрочными финансовыми целями.';
+        message = 'You are on the right track, but you need to develop more confidence in managing finances and investing. Work on long-term financial goals.';
     } else if (score >= 15 && score <= 20) {
-        message = 'Вы обладаете хорошими финансовыми навыками, но есть потенциал для улучшения. Постоянно учитесь и расширяйте свои знания в этой области.';
+        message = 'You have good financial skills, but there is room for improvement. Keep learning and expanding your knowledge in this field.';
     } else if (score >= 21 && score <= 24) {
-        message = 'Отлично! Вы готовы к финансовому успеху и применяете грамотные стратегии. Продолжайте развивать финансовую грамотность и создавайте более масштабные планы.';
+        message = 'Excellent! You are ready for financial success and applying sound strategies. Continue developing your financial literacy and create more extensive plans.';
     }
 
     quizDiv.style.display = 'none';
-    resultDiv.textContent = `Ваш результат: ${score} баллов. ${message}`;
+    resultDiv.textContent = `Your result: ${score} points. ${message}`;
     resultDiv.style.display = 'block';
 }
 

@@ -1,65 +1,65 @@
-        const questions = [
+       const questions = [
     {
-        question: "Как часто ты чувствуешь себя одиноко?",
+        question: "How often do you feel lonely?",
         answers: [
-            { text: "a) Почти всегда. Мне кажется, что никто меня не понимает.", value: 1 },
-            { text: "b) Иногда, особенно когда нет рядом близких людей.", value: 2 },
-            { text: "c) Редко, но бывает, что мне не хватает общения.", value: 3 },
-            { text: "d) Очень редко, я окружён(а) людьми, с которыми мне комфортно.", value: 4 }
+            { text: "a) Almost always. It feels like no one understands me.", value: 1 },
+            { text: "b) Sometimes, especially when there are no close people around.", value: 2 },
+            { text: "c) Rarely, but there are times when I miss socializing.", value: 3 },
+            { text: "d) Very rarely, I am surrounded by people with whom I feel comfortable.", value: 4 }
         ]
     },
     {
-        question: "Как ты реагируешь, когда встречаешь новых людей?",
+        question: "How do you react when meeting new people?",
         answers: [
-            { text: "a) Я избегаю общения и стараюсь не заводить новых контактов.", value: 1 },
-            { text: "b) Мне сложно начать разговор, но я стараюсь.", value: 2 },
-            { text: "c) Я открыто общаюсь, но не всегда чувствую связь с новыми людьми.", value: 3 },
-            { text: "d) Мне легко находить общий язык и строить отношения.", value: 4 }
+            { text: "a) I avoid communication and try not to make new connections.", value: 1 },
+            { text: "b) It's hard for me to start a conversation, but I try.", value: 2 },
+            { text: "c) I communicate openly, but don't always feel a connection with new people.", value: 3 },
+            { text: "d) I find it easy to connect and build relationships.", value: 4 }
         ]
     },
     {
-        question: "Как ты оцениваешь свои отношения с близкими людьми?",
+        question: "How do you evaluate your relationships with close people?",
         answers: [
-            { text: "a) У меня нет близких людей, с которыми я могу поделиться своими мыслями и переживаниями.", value: 1 },
-            { text: "b) Я общаюсь с несколькими близкими, но в целом чувствую дистанцию.", value: 2 },
-            { text: "c) Я ценю своих близких, но часто ощущаю, что чего-то не хватает.", value: 3 },
-            { text: "d) Мои отношения с близкими очень крепкие и гармоничные.", value: 4 }
+            { text: "a) I don't have close people I can share my thoughts and feelings with.", value: 1 },
+            { text: "b) I talk to a few close people, but I still feel a distance.", value: 2 },
+            { text: "c) I value my close ones, but often feel like something is missing.", value: 3 },
+            { text: "d) My relationships with close people are very strong and harmonious.", value: 4 }
         ]
     },
     {
-        question: "Как часто ты ищешь возможность для общения или встреч с другими людьми?",
+        question: "How often do you look for opportunities to communicate or meet with others?",
         answers: [
-            { text: "a) Почти никогда, мне не интересно общаться.", value: 1 },
-            { text: "b) Редко, но иногда мне хочется провести время с кем-то.", value: 2 },
-            { text: "c) Иногда я активно ищу общения, но бывает трудно найти подходящих людей.", value: 3 },
-            { text: "d) Я часто нахожу возможность общаться и легко нахожу новых людей.", value: 4 }
+            { text: "a) Almost never, I am not interested in socializing.", value: 1 },
+            { text: "b) Rarely, but sometimes I want to spend time with someone.", value: 2 },
+            { text: "c) Sometimes I actively look for socializing, but it's hard to find suitable people.", value: 3 },
+            { text: "d) I often find opportunities to socialize and easily meet new people.", value: 4 }
         ]
     },
     {
-        question: "Как ты оцениваешь свою способность открываться другим людям?",
+        question: "How do you evaluate your ability to open up to others?",
         answers: [
-            { text: "a) Я почти никогда не делюсь личными переживаниями и мыслями.", value: 1 },
-            { text: "b) Иногда я открываюсь, но часто чувствую себя уязвимым.", value: 2 },
-            { text: "c) Я могу быть откровенным, но боюсь, что меня не поймут.", value: 3 },
-            { text: "d) Мне несложно открыться другим людям и поделиться личным.", value: 4 }
+            { text: "a) I almost never share personal feelings and thoughts.", value: 1 },
+            { text: "b) Sometimes I open up, but I often feel vulnerable.", value: 2 },
+            { text: "c) I can be honest, but I'm afraid people won't understand me.", value: 3 },
+            { text: "d) It's easy for me to open up to others and share personal things.", value: 4 }
         ]
     },
     {
-        question: "Как ты относишься к одиночеству?",
+        question: "How do you feel about being alone?",
         answers: [
-            { text: "a) Я избегаю одиночества любой ценой.", value: 1 },
-            { text: "b) Я не люблю оставаться один, но иногда могу пережить это.", value: 2 },
-            { text: "c) Одиночество меня не пугает, я часто нахожу время для себя.", value: 3 },
-            { text: "d) Мне комфортно быть наедине с собой и наслаждаться этим.", value: 4 }
+            { text: "a) I avoid being alone at all costs.", value: 1 },
+            { text: "b) I don't like being alone, but I can handle it sometimes.", value: 2 },
+            { text: "c) I am not afraid of being alone, I often find time for myself.", value: 3 },
+            { text: "d) I feel comfortable being by myself and enjoy it.", value: 4 }
         ]
     },
     {
-        question: "Как ты воспринимаешь свои возможности для построения отношений?",
+        question: "How do you perceive your ability to build relationships?",
         answers: [
-            { text: "a) Мне кажется, что я не могу построить крепкие отношения.", value: 1 },
-            { text: "b) Я думаю, что отношения возможны, но часто мне не хватает уверенности.", value: 2 },
-            { text: "c) Я уверен(а), что могу построить отношения, но иногда это сложно.", value: 3 },
-            { text: "d) Я уверен(а), что строю здоровые и гармоничные отношения.", value: 4 }
+            { text: "a) I feel like I can't build strong relationships.", value: 1 },
+            { text: "b) I think relationships are possible, but I often lack confidence.", value: 2 },
+            { text: "c) I am confident that I can build relationships, but sometimes it's difficult.", value: 3 },
+            { text: "d) I am confident that I am building healthy and harmonious relationships.", value: 4 }
         ]
     }
 ];
@@ -83,7 +83,7 @@ function loadQuestion() {
                         </label>
                     `).join('')}
                 </div>
-                <button id="nextButton">Далее</button>
+                <button id="nextButton">Next</button>
             </div>
         `;
 
@@ -97,7 +97,7 @@ function loadQuestion() {
 function nextQuestion() {
     const selectedAnswer = document.querySelector('input[name="answer"]:checked');
     if (!selectedAnswer) {
-        alert('Пожалуйста, выберите ответ перед продолжением.');
+        alert('Please select an answer before continuing.');
         return;
     }
     score += parseInt(selectedAnswer.value);
@@ -108,17 +108,17 @@ function nextQuestion() {
 function showResult() {
     let message = '';
     if (score >= 7 && score <= 10) {
-        message = 'Вам может не хватать близких контактов или уверенности в себе. Подумайте, как открыть себя для новых отношений и наладить связь с окружающими.';
+        message = 'You may lack close connections or confidence in yourself. Think about how to open up to new relationships and connect with those around you.';
     } else if (score >= 11 && score <= 14) {
-        message = 'Вы немного закрыты, возможно, чувствуете себя неудобно в новых знакомствах. Это время для работы над уверенностью и открытостью к людям.';
+        message = 'You are somewhat closed off and may feel uncomfortable in new encounters. This is a time to work on your confidence and openness with people.';
     } else if (score >= 15 && score <= 20) {
-        message = 'У вас есть хорошие социальные навыки, но бывают моменты, когда вам хочется большего. Возможно, стоит улучшить качество отношений и открыть своё сердце.';
+        message = 'You have good social skills, but there are times when you want more. Perhaps improving the quality of your relationships and opening your heart would help.';
     } else if (score >= 21 && score <= 24) {
-        message = 'Вы уверены в себе и ваших отношениях с окружающими. Поддерживайте и развивайте связи с людьми, и вы будете чувствовать себя ещё более связанным с миром.';
+        message = 'You are confident in yourself and your relationships with others. Keep nurturing and developing your connections with people, and you will feel even more connected to the world.';
     }
 
     quizDiv.style.display = 'none';
-    resultDiv.textContent = `Ваш результат: ${score} баллов. ${message}`;
+    resultDiv.textContent = `Your result: ${score} points. ${message}`;
     resultDiv.style.display = 'block';
 }
 

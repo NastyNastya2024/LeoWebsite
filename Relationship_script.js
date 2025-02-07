@@ -1,47 +1,47 @@
 const questions = [
     {
-        question: "Как вы обычно решаете разногласия в семье?",
+        question: "How do you usually resolve disagreements in your family?",
         answers: [
-            { text: "a) Стараюсь избегать конфликтов, переждать.", value: 1 },
-            { text: "b) Высказываю всё эмоционально, а потом жалею.", value: 2 },
-            { text: "c) Обсуждаю проблему спокойно, ищу компромисс.", value: 3 },
-            { text: "d) Обсуждаем проблему, формируем план действий.", value: 4 }
+            { text: "a) I try to avoid conflicts and wait it out.", value: 1 },
+            { text: "b) I express everything emotionally, then regret it.", value: 2 },
+            { text: "c) I discuss the problem calmly and look for a compromise.", value: 3 },
+            { text: "d) We discuss the issue and create an action plan.", value: 4 }
         ]
     },
     {
-        question: "Как вы проявляете заботу о близких?",
+        question: "How do you show care for your loved ones?",
         answers: [
-            { text: "a) Редко выражаю чувства, все и так знают, что я их люблю.", value: 1 },
-            { text: "b) Иногда делаю сюрпризы, но не систематически.", value: 2 },
-            { text: "c) Ежедневно говорю тёплые слова, интересуюсь настроением.", value: 3 },
-            { text: "d) Поддерживаю семейные традиции, вкладываю время в отношения.", value: 4 }
+            { text: "a) I rarely express my feelings, everyone knows I love them.", value: 1 },
+            { text: "b) I sometimes make surprises, but not consistently.", value: 2 },
+            { text: "c) I speak kind words daily and inquire about their mood.", value: 3 },
+            { text: "d) I support family traditions and invest time in relationships.", value: 4 }
         ]
     },
     {
-        question: "Как вы воспринимаете обязанности по дому?",
+        question: "How do you perceive household duties?",
         answers: [
-            { text: "a) Это не моя забота, пусть другие этим занимаются.", value: 1 },
-            { text: "b) Помогаю только, если попросят.", value: 2 },
-            { text: "c) Распределяем обязанности с учётом занятости.", value: 3 },
-            { text: "d) У нас есть чёткий план и распределение ролей.", value: 4 }
+            { text: "a) It's not my concern, let others handle it.", value: 1 },
+            { text: "b) I help only if asked.", value: 2 },
+            { text: "c) We divide the duties considering everyone's availability.", value: 3 },
+            { text: "d) We have a clear plan and distribution of roles.", value: 4 }
         ]
     },
     {
-        question: "Как часто вы делитесь своими чувствами?",
+        question: "How often do you share your feelings?",
         answers: [
-            { text: "a) Почти никогда, держу всё в себе.", value: 1 },
-            { text: "b) Высказываюсь только, когда накипело.", value: 2 },
-            { text: "c) Стараюсь делиться, когда чувствую, что это важно.", value: 3 },
-            { text: "d) У нас принята культура диалога и открытости.", value: 4 }
+            { text: "a) Almost never, I keep everything inside.", value: 1 },
+            { text: "b) I only speak up when I've had enough.", value: 2 },
+            { text: "c) I try to share when I feel it's important.", value: 3 },
+            { text: "d) We have a culture of dialogue and openness.", value: 4 }
         ]
     },
     {
-        question: "Как решаются финансовые вопросы в семье?",
+        question: "How are financial matters handled in your family?",
         answers: [
-            { text: "a) Один решает всё, остальные не в курсе.", value: 1 },
-            { text: "b) Иногда обсуждаем, но нет чёткого плана.", value: 2 },
-            { text: "c) Есть общее понимание бюджета и целей.", value: 3 },
-            { text: "d) Ведём семейный бюджет, анализируем траты.", value: 4 }
+            { text: "a) One person handles everything, the others are not involved.", value: 1 },
+            { text: "b) We discuss sometimes, but there is no clear plan.", value: 2 },
+            { text: "c) We have a mutual understanding of the budget and goals.", value: 3 },
+            { text: "d) We keep a family budget and analyze expenses.", value: 4 }
         ]
     }
 ];
@@ -65,7 +65,7 @@ function loadQuestion() {
                         </label>
                     `).join('')}
                 </div>
-                <button id="nextButton">Далее</button>
+                <button id="nextButton">Next</button>
             </div>
         `;
         document.getElementById('nextButton').addEventListener('click', nextQuestion);
@@ -77,7 +77,7 @@ function loadQuestion() {
 function nextQuestion() {
     const selectedAnswer = document.querySelector('input[name="answer"]:checked');
     if (!selectedAnswer) {
-        alert('Пожалуйста, выберите ответ перед продолжением.');
+        alert('Please select an answer before continuing.');
         return;
     }
     score += parseInt(selectedAnswer.value);
@@ -88,17 +88,17 @@ function nextQuestion() {
 function showResult() {
     let message = '';
     if (score <= 10) {
-        message = 'Вашей семье может не хватать открытого диалога и совместного планирования.';
+        message = 'Your family might be lacking open dialogue and joint planning.';
     } else if (score <= 14) {
-        message = 'У вас есть стремление к гармонии, но бывают трудности в коммуникации.';
+        message = 'You have a desire for harmony, but face communication challenges.';
     } else if (score <= 18) {
-        message = 'Вы поддерживаете здоровую атмосферу, но есть куда расти.';
+        message = 'You maintain a healthy atmosphere, but there is room for growth.';
     } else {
-        message = 'Поздравляем! У вас гармоничные и доверительные семейные отношения!';
+        message = 'Congratulations! You have harmonious and trusting family relationships!';
     }
 
     quizDiv.style.display = 'none';
-    resultDiv.textContent = `Ваш результат: ${score} баллов. ${message}`;
+    resultDiv.textContent = `Your result: ${score} points. ${message}`;
     resultDiv.style.display = 'block';
 }
 

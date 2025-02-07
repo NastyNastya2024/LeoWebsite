@@ -1,74 +1,74 @@
 const questions = [
     {
-        question: "Как вы относитесь к новым возможностям (предложениям, идеям, проектам)?",
+        question: "How do you feel about new opportunities (offers, ideas, projects)?",
         answers: [
-            { text: "a) Мне сложно решиться на что-то новое: слишком много сомнений.", value: 1 },
-            { text: "b) Я взвешиваю «за» и «против», часто сомневаюсь и откладываю решение.", value: 2 },
-            { text: "c) Я обычно довольно быстро принимаю решение, особенно если вижу пользу для развития.", value: 3 },
-            { text: "d) Я с энтузиазмом хватаюсь за возможность и уже по ходу разбираюсь с деталями.", value: 4 }
+            { text: "a) I find it difficult to commit to something new: too many doubts.", value: 1 },
+            { text: "b) I weigh the pros and cons, often hesitate and delay making a decision.", value: 2 },
+            { text: "c) I usually make decisions fairly quickly, especially if I see personal development benefits.", value: 3 },
+            { text: "d) I enthusiastically seize the opportunity and figure out the details along the way.", value: 4 }
         ]
     },
     {
-        question: "Как вы реагируете, если что-то идёт не по плану?",
+        question: "How do you react when things don't go as planned?",
         answers: [
-            { text: "a) Расстраиваюсь и склонен(а) бросить начатое.", value: 1 },
-            { text: "b) Я злюсь на себя или окружающих, а потом долго «пережёвываю» эту ситуацию.", value: 2 },
-            { text: "c) Я стараюсь понять, как можно скорректировать план и вырулить ситуацию.", value: 3 },
-            { text: "d) Я воспринимаю неудачи как опыт и мотивирую себя фразой: «Отлично, теперь я знаю, как сделать лучше».", value: 4 }
+            { text: "a) I get upset and tend to give up on what I started.", value: 1 },
+            { text: "b) I get angry at myself or others, then dwell on the situation for a long time.", value: 2 },
+            { text: "c) I try to figure out how to adjust the plan and steer the situation.", value: 3 },
+            { text: "d) I see failures as experience and motivate myself with the phrase: 'Great, now I know how to do it better.'", value: 4 }
         ]
     },
     {
-        question: "Насколько вы готовы обучаться новым навыкам?",
+        question: "How open are you to learning new skills?",
         answers: [
-            { text: "a) У меня нет времени и сил на дополнительное обучение — и так хватает забот.", value: 1 },
-            { text: "b) Интересно, но я часто откладываю курсы и книги «на потом».", value: 2 },
-            { text: "c) Я стараюсь проходить онлайн-курсы и читать книги по саморазвитию, когда появляется время и вдохновение.", value: 3 },
-            { text: "d) Я постоянно учусь — записываюсь на курсы, слушаю подкасты, читаю статьи и практикую полученные знания.", value: 4 }
+            { text: "a) I don't have the time or energy for additional learning — I have enough on my plate.", value: 1 },
+            { text: "b) It's interesting, but I often postpone courses and books for later.", value: 2 },
+            { text: "c) I try to take online courses and read self-development books when I have the time and inspiration.", value: 3 },
+            { text: "d) I'm constantly learning — I enroll in courses, listen to podcasts, read articles, and practice what I've learned.", value: 4 }
         ]
     },
     {
-        question: "Как вы определяете свои цели?",
+        question: "How do you define your goals?",
         answers: [
-            { text: "a) Живу «как придётся», не люблю строить планы.", value: 1 },
-            { text: "b) У меня в голове есть несколько целей, но они не очень конкретны.", value: 2 },
-            { text: "c) Я люблю ставить конкретные цели на год и разбивать их на более мелкие задачи.", value: 3 },
-            { text: "d) У меня есть масштабное видение (цели на 5–10 лет) и детальный план, как к ним двигаться.", value: 4 }
+            { text: "a) I live 'as it comes', I don't like making plans.", value: 1 },
+            { text: "b) I have a few goals in mind, but they are not very specific.", value: 2 },
+            { text: "c) I like setting specific goals for the year and breaking them down into smaller tasks.", value: 3 },
+            { text: "d) I have a big vision (goals for 5-10 years) and a detailed plan on how to move toward them.", value: 4 }
         ]
     },
     {
-        question: "Как вы относитесь к критике со стороны окружающих?",
+        question: "How do you feel about criticism from others?",
         answers: [
-            { text: "a) Мне неприятно даже думать о том, что меня могут критиковать.", value: 1 },
-            { text: "b) Меня задевает критика, но если она конструктивная, я пытаюсь извлечь уроки.", value: 2 },
-            { text: "c) Я спокойно разбираюсь, почему возникла критика, и ищу способы исправить или улучшить свою работу.", value: 3 },
-            { text: "d) Я благодарен(на) любой критике, ведь она помогает мне расти и видеть слепые зоны.", value: 4 }
+            { text: "a) I don't even like to think about being criticized.", value: 1 },
+            { text: "b) Criticism bothers me, but if it's constructive, I try to learn from it.", value: 2 },
+            { text: "c) I calmly analyze why the criticism came up and look for ways to fix or improve my work.", value: 3 },
+            { text: "d) I'm grateful for any criticism as it helps me grow and see my blind spots.", value: 4 }
         ]
     },
     {
-        question: "Какой формат саморазвития вы предпочитаете?",
+        question: "What format of self-development do you prefer?",
         answers: [
-            { text: "a) Никакого. У меня нет ресурсов на «эти новомодные практики».", value: 1 },
-            { text: "b) Мне нравятся вдохновляющие видео или статьи, но я редко применяю советы на практике.", value: 2 },
-            { text: "c) Мне подходят краткие, но регулярные форматы (ежедневная микропрактика, 15-минутный коучинг).", value: 3 },
-            { text: "d) Я использую максимально широкий спектр: читаю, слушаю, практикую, веду дневник, хожу на тренинги.", value: 4 }
+            { text: "a) None. I don't have resources for these 'trendy practices'.", value: 1 },
+            { text: "b) I like inspiring videos or articles, but I rarely apply the advice in practice.", value: 2 },
+            { text: "c) Short, but regular formats work for me (daily micro-practices, 15-minute coaching).", value: 3 },
+            { text: "d) I use a wide range: I read, listen, practice, keep a journal, and attend workshops.", value: 4 }
         ]
     },
     {
-        question: "Что мотивирует вас больше всего?",
+        question: "What motivates you the most?",
         answers: [
-            { text: "a) Страх остаться «за бортом» или отстать от окружающих.", value: 1 },
-            { text: "b) Желание получить признание от важных для меня людей.", value: 2 },
-            { text: "c) Понимание, что саморазвитие откроет для меня новые возможности и перспективы.", value: 3 },
-            { text: "d) Внутренний азарт к познанию и желание максимально реализовать свой потенциал.", value: 4 }
+            { text: "a) The fear of being 'left behind' or falling behind others.", value: 1 },
+            { text: "b) The desire for recognition from people important to me.", value: 2 },
+            { text: "c) The understanding that self-development will open new opportunities and perspectives.", value: 3 },
+            { text: "d) The inner excitement of learning and the desire to maximize my potential.", value: 4 }
         ]
     },
     {
-        question: "Как вы реагируете на чужие успехи (в соцсетях, на работе и т.д.)?",
+        question: "How do you react to other people's successes (on social media, at work, etc.)?",
         answers: [
-            { text: "a) Чувствую зависть и обескураженность, ведь у меня так не получается.", value: 1 },
-            { text: "b) Думаю, что это просто удача или связи.", value: 2 },
-            { text: "c) Вдохновляюсь примером и задаюсь вопросом: «А что из этого я могу применить в своей жизни?».", value: 3 },
-            { text: "d) С удовольствием поздравляю и перенимаю лайфхаки, которые помогли человеку вырасти.", value: 4 }
+            { text: "a) I feel envy and discouragement because I can't achieve that.", value: 1 },
+            { text: "b) I think it's just luck or connections.", value: 2 },
+            { text: "c) I get inspired by the example and ask myself: 'What can I apply from this in my own life?'.", value: 3 },
+            { text: "d) I gladly congratulate them and adopt any tips that helped them grow.", value: 4 }
         ]
     }
 ];
@@ -92,7 +92,7 @@ function loadQuestion() {
                         </label>
                     `).join('')}
                 </div>
-                <button id="nextButton">Далее</button>
+                <button id="nextButton">Next</button>
             </div>
         `;
 
@@ -106,7 +106,7 @@ function loadQuestion() {
 function nextQuestion() {
     const selectedAnswer = document.querySelector('input[name="answer"]:checked');
     if (!selectedAnswer) {
-        alert('Пожалуйста, выберите ответ перед продолжением.');
+        alert('Please select an answer before continuing.');
         return;
     }
     score += parseInt(selectedAnswer.value);
@@ -117,17 +117,17 @@ function nextQuestion() {
 function showResult() {
     let message = '';
     if (score >= 8 && score <= 14) {
-        message = 'Ваше желание к саморазвитию пока не сформировано или постоянно наталкивается на барьеры. Начать можно с маленьких шагов!';
+        message = 'Your desire for self-development is not yet formed or is constantly facing barriers. Start with small steps!';
     } else if (score >= 15 && score <= 23) {
-        message = 'Вы уже интересуетесь саморазвитием, но часто останавливаетесь на полпути. Попробуйте более системный подход.';
+        message = 'You are already interested in self-development, but often stop halfway. Try a more systematic approach.';
     } else if (score >= 24 && score <= 28) {
-        message = 'У вас хороший уровень осознанности и стремление к росту. Вы регулярно ищете новую информацию, пробуете методы.';
+        message = 'You have a good level of awareness and a desire for growth. You regularly seek new information and try methods.';
     } else if (score >= 29 && score <= 32) {
-        message = 'Поздравляем! Вы уже являетесь «вечным учеником» и активно ищете новый опыт. Отличная мотивация и развитие!';
+        message = 'Congratulations! You are already a "lifelong learner" and actively seek new experiences. Excellent motivation and development!';
     }
 
     quizDiv.style.display = 'none';
-    resultDiv.textContent = `Ваш результат: ${score} баллов. ${message}`;
+    resultDiv.textContent = `Your result: ${score} points. ${message}`;
     resultDiv.style.display = 'block';
 }
 
