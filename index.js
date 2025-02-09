@@ -14,6 +14,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 index = (index + 1) % phrases.length;
             }
 
-            setInterval(changeText, 4000); // Меняет текст каждые 3 секунды
+            setInterval(changeText, 10000); // Меняет текст каждые 3 секунды
         });
 
