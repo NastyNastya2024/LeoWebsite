@@ -244,7 +244,7 @@ footer {
 
 .first-mockup {
     width: 100%; /* Уменьшаем ширину */
-    max-width: 900px; /* Ограничиваем максимальный размер */
+    max-width: 1000px; /* Ограничиваем максимальный размер */
     height: auto;
     position: relative;
     z-index: -1;
@@ -253,7 +253,7 @@ footer {
 
 .phone-mockup {
     width: 100%; /* Уменьшаем ширину */
-    max-width: 600px; /* Ограничиваем максимальный размер */
+    max-width: 1000px; /* Ограничиваем максимальный размер */
     height: auto;
     position: relative;
     z-index: -1;
