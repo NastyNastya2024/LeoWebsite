@@ -1,13 +1,12 @@
 /* Подключение шрифта */
-
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #C5DBF6;
     margin: 0;
-    padding: 0;    position: relative; /* Для правильного позиционирования слоев */
+    padding: 0;
+    position: relative; /* Для правильного позиционирования слоев */
 }
 
-/* Видео на заднем плане */
 /* Основной контейнер */
 .content-container {
     width: 100%;
@@ -18,41 +17,47 @@ body {
     margin-bottom: 50px;
 }
 
+.highlight {
+    color: white;
+    background: none; /* Убираем фон, если он был */
+}
+
 /* Видеофон */
 .video-background {
     width: 140%;
     height: 140%;
     object-fit: contain;
     position: relative;
-    top: 50%;            /* Центрируем по вертикали */
-    left: 60%;           /* Центрируем по горизонтали */
+    top: 50%;
+    left: 80%;
     transform: translate(-50%, -50%);
-    flex-wrap: wrap; /* Адаптация к экранам */
-    z-index: -1; /* Видео на заднем плане */
+    z-index: -1;
 }
+
+
+
 
 /* Текстовый контент */
 .text-content {
     position: absolute;
-    top: 30%;  /* Выравнивание по вертикали */
-    left: 35%; /* Выравнивание по горизонтали */
-    transform: translate(-50%, -50%); /* Центрируем */
+    top: 30%;
+    left: 35%;
+    transform: translate(-50%, -50%);
     color: #244272;
     text-align: left;
-    z-index: 1; /* Текст поверх видео */
-    max-width: 80%; /* Ограничиваем ширину текста */
+    z-index: 1;
+    max-width: 80%;
     margin-bottom: 50px;
 }
 
 /* Заголовок */
 h1 {
-    font-size: 1 rem;
+    font-size: 1rem; /* 🔴 Исправлен синтаксис */
     line-height: 1.1;
     margin: 0;
     font-weight: bold;
     color: #244272;
 }
-
 
 /* Навигация */
 .navbar {
@@ -67,7 +72,7 @@ h1 {
     color: #333;
     margin: 0 15px;
     font-weight: 600;
-    padding-left: 20px; /* Отступ слева */
+    padding-left: 20px;
 }
 
 /* Контент */
@@ -79,19 +84,14 @@ h1 {
     margin: 60px auto;
     padding: 0 40px;
     flex-wrap: wrap;
-    padding-left: 20px; /* Отступ слева */
+    padding-left: 20px;
 }
 
-.text-content h1 {
-    font-size: 3vw;
+.text-content h1, .text2 h1, .text4 h1 {
+    font-size: 3vw; /* 🔴 Размер текста регулируется через vw */
     font-weight: 700;
-    color: ##244272;
+    color: #244272;
     margin-bottom: 20px;
-}
-
-.highlight {
-    color: #FFFFFF;
-    padding-left: 0px; /* Отступ слева */
 }
 
 .description {
@@ -109,92 +109,77 @@ h1 {
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
-    margin-top: 20px; /* Отступ сверху */
+    margin-top: 20px;
 }
 
-/* Эффект на кнопке при наведении */
 .start-button:hover {
-    background-color: #d75c51; /* Темный оттенок при наведении */
+    background-color: #d75c51;
 }
-
 
 /* Контейнер с карточками */
 .cards-container {
     position: absolute;
-    flex-wrap: wrap; /* Адаптация к экранам */
-    display: flex; /* Размещаем элементы в строку */
-    bottom: 0px; /* Располагаем карточки внизу */
-    width: 100%;
+    flex-wrap: wrap;
     display: flex;
-    z-index: 1; /* Карточки поверх видео */
+    bottom: 0px;
+    width: 100%;
+    z-index: 1;
 }
 
-
 /* Контейнер */
-.container1 {
-    display: flex; /* Размещаем элементы в строку */
-    align-items: center; /* Выравниваем элементы */
+.container1, .container2 {
+    display: flex;
+    align-items: center;
     justify-content: center;
     max-width: 1200px;
     margin: 200px auto;
     padding: 40px;
-    flex-wrap: wrap; /* Адаптация к экранам */
-    text-align: left; /* Выравниваем текст влево */
+    flex-wrap: wrap;
+    text-align: left;
     position: relative;
     z-index: 2;
-    gap: 0px; /* Отступ между текстом и картинкой */
+    gap: 0px;
 }
 
-/* Мокап телефона */
-/* Контейнер с текстом */
-.text2 {
-    flex: 1; /* Текст занимает оставшееся пространство */
-    max-width: 100%; /* Ограничиваем ширину текста */
+/* Текстовый блок */
+.text2, .text4 {
+    flex: 1;
+    max-width: 100%;
     position: relative;
-    align-items: center; /* Выравниваем элементы */
-    z-index: 1; /* Поднимаем текст над картинкой */
+    align-items: center;
+    z-index: 1;
     color: #244272;
     padding: 20px;
 }
 
 /* Контейнер с картинкой */
-.image-container {
-    flex: 5; /* Картинка занимает вторую половину экрана */
+.image-container, .image-container1 {
+    flex: 5;
     position: relative;
-    align-items: center; /* Выравниваем элементы */
-    max-width: 70%;
+    align-items: center;
+    max-width: 50%;
     display: flex;
-    z-index: -1; /* Размещаем картинку под текстом */
-    justify-content: left; /* Центрируем изображение */
+    z-index: -1;
+    justify-content: left;
 }
 
 /* Само изображение */
-.first-mockup {
-    width:140%;
-    max-width: 1200px; /* Ограничиваем размер изображения */
+.first-mockup, .phone-mockup, .phone-mockup1 {
+    width: 140%;
+    max-width: 1200px;
     height: auto;
     position: relative;
-    z-index: -1; /* Размещаем картинку под текстом */
-    opacity: 0.9; /* Немного прозрачности для лучшего контраста */
+    z-index: -1;
+    opacity: 0.9;
 }
 
-.phone-mockup {
-    width:100%;
-    max-width: 700px; /* Ограничиваем размер изображения */
-    height: auto;
-    position: relative;
-    z-index: -1; /* Размещаем картинку под текстом */
-    opacity: 0.9; /* Немного прозрачности для лучшего контраста */
-}
-
-/* Контейнер для стрелок */
+/* Кнопки */
 .arrow-container {
     position: absolute;
     bottom: 10px;
     right: 10px;
 }
 
-/* Кнопки */
 .arrow-button {
     width: 40px;
     height: 40px;
@@ -210,130 +195,19 @@ h1 {
     transition: all 0.2s ease-in-out;
 }
 
-.text2 h1 {
+/* Текст */
+.text2 h1, .text4 h1 {
     font-size: 3vw;
     font-weight: 700;
     color: #244272;
     margin-bottom: 20px;
 }
 
-
-
-/* Контейнер */
-.container2 {
-    display: flex; /* Размещаем элементы в строку */
-    align-items: center; /* Выравниваем элементы */
-    justify-content: center;
-    max-width: 1200px;
-    margin: 200px auto;
-    padding: 40px;
-    flex-wrap: wrap; /* Адаптация к экранам */
-    text-align: left; /* Выравниваем текст влево */
-    position: relative;
-    z-index: 2;
-    gap: 0px; /* Отступ между текстом и картинкой */
-}
-
-/* Мокап телефона */
-/* Контейнер с текстом */
-.text4 {
-    flex: 1; /* Текст занимает оставшееся пространство */
-    max-width: 100%; /* Ограничиваем ширину текста */
-    position: relative;
-    align-items: center; /* Выравниваем элементы */
-    z-index: 1; /* Поднимаем текст над картинкой */
-    color: #244272;
-    padding: 20px;
-}
-
-/* Контейнер с картинкой */
-.image-container1 {
-    flex: 5; /* Картинка занимает вторую половину экрана */
-    position: relative;
-    align-items: center; /* Выравниваем элементы */
-    max-width: 70%;
-    display: flex;
-    z-index: -1; /* Размещаем картинку под текстом */
-    justify-content: left; /* Центрируем изображение */
-}
-
-/* Само изображение */
-.phone-mockup1 {
-    width:100%;
-    max-width: 700px; /* Ограничиваем размер изображения */
-    height: auto;
-    position: relative;
-    z-index: -1; /* Размещаем картинку под текстом */
-    opacity: 0.9; /* Немного прозрачности для лучшего контраста */
-}
-
-/* Контейнер для стрелок */
-.arrow-container {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-}
-
-/* Кнопки */
-.arrow-button1 {
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-    color: white;
-}
-
-.text4 h1 {
-    font-size: 3vw;
-    font-weight: 700;
-    color: #244272;
-    margin-bottom: 20px;
-    left: 40%; /* Горизонтальное выравнивание */
-}
-
-
-
-.description1 {
-    font-size: 1.5vw;
-    color: #244272;
-    margin-bottom: 20px;
-}
-
-.content-container4 {
-    width: 100%;
-    height: 50vh;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    margin-bottom: 20px;
-}
-
-.cards-container4 {
-    position: absolute;
-    width: 96%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 10px;
-    padding: 0 20px;
-    box-sizing: border-box; /* Учитываем отступы в общей ширине */
-    z-index: 1; /* Карточки поверх видео */
-}
-
-/* Текстовый контент */
-.text-content4 {
-    color: white;
-    text-align: left;
-    z-index: 1; /* Текст поверх видео */
-    max-width: 80%; /* Ограничиваем ширину текста */
-}
-
-
+/* Footer */
 footer {
     background-color: #2c3e50;
     color: #ecf0f1;
     padding: 20px 0;
-    font-family: Arial, sans-serif;
 }
 
 .footer-container {
@@ -368,5 +242,63 @@ footer {
     border-top: 1px solid #7f8c8d;
 }
 
+.first-mockup {
+    width: 100%; /* Уменьшаем ширину */
+    max-width: 900px; /* Ограничиваем максимальный размер */
+    height: auto;
+    position: relative;
+    z-index: -1;
+    opacity: 0.9;
+}
 
+.phone-mockup {
+    width: 100%; /* Уменьшаем ширину */
+    max-width: 600px; /* Ограничиваем максимальный размер */
+    height: auto;
+    position: relative;
+    z-index: -1;
+    opacity: 0.9;
+}
 
+/* Дополнительные стили для мобильных устройств */
+@media (max-width: 768px) {
+    .first-mockup, .phone-mockup {
+        width: 70%; /* Еще больше уменьшаем на маленьких экранах */
+        max-width: 400px;
+    }
+}
+
+/* 🔴 Медиазапрос для мобильных устройств */
+@media (max-width: 768px) {
+    /* 🔴 Уменьшаем шрифт, но не меньше 22px */
+    .text-content h1, .text2 h1, .text4 h1 {
+        font-size: min(5vw, 22px);
+    }
+
+    /* 🔴 Уменьшаем расстояния между блоками */
+    .container1, .container2 {
+        margin: 100px auto;
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    /* 🔴 Картинки не уменьшаются, а переносятся вниз */
+    .image-container, .image-container1 {
+        order: 2;
+        max-width: 100%;
+        justify-content: center;
+    }
+
+    /* 🔴 Ограничиваем размер картинок */
+    .phone-mockup, .first-mockup, .phone-mockup1 {
+        width: auto;
+        max-width: 400px;
+        height: auto;
+    }
+
+    /* 🔴 Уменьшаем кнопку */
+    .start-button {
+        padding: 10px 18px;
+        font-size: 0.9rem;
+    }
+}
